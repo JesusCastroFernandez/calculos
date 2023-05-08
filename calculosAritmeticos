@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class CalculosNumericos {
+    public static void main(String[] args) {
+        // Crear un objeto Scanner para leer datos desde la entrada estándar
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario que ingrese dos números reales
+        System.out.print("Ingresa el primer número: ");
+        double numero1 = scanner.nextDouble();
+        System.out.print("Ingresa el segundo número: ");
+        double numero2 = scanner.nextDouble();
+
+        // Realizar los cálculos solicitados
+        double dobleNumero1 = numero1 * 2;
+        double mitadNumero2 = numero2 / 2;
+        double suma = numero1 + numero2;
+        double cuadradoSuma = Math.pow(suma, 2);
+        double decimaParte = (Math.pow(numero1, 2) + Math.pow(numero2, 2)) / 10;
+
+        // Imprimir los resultados
+        System.out.println("El doble del primer número es: " + dobleNumero1);
+        System.out.println("La mitad del segundo número es: " + mitadNumero2);
+        System.out.println("El cuadrado de la suma de ambos números es: " + cuadradoSuma);
+        System.out.println("La décima parte de la suma de los cuadrados de ambos números es: " + decimaParte);
+    }
+}
